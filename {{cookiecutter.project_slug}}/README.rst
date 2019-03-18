@@ -76,6 +76,7 @@ Post-creation
 
   * pepy.tech
   * dependabot
+  * better code hub
   * readme.rst
 
     * mettre les bons badges
