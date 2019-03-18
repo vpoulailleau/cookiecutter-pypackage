@@ -35,8 +35,6 @@ Post-creation
     * dans les settings du projet, configurer pour les commentaires de pull requests
     * pour le test coverage, trouver l'ID à coller dans la config de travis
   * travis
-    * configurer le mot de passe de déploiement sur PyPI : travis encrypt --add deploy.password
-    * regarder la config de simplelogging
     * pour avoir le code pour le badge, il faut cliquer sur le badge dans le dashboard
   * coveralls
     * changer le repo_token dans .coveralls.yml
