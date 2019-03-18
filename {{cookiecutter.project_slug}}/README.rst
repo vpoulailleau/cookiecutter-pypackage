@@ -41,6 +41,7 @@ Post-creation
     * python3 -m venv venv
     * source venv/bin/activate
     * *C'est important pour la suite*
+    * pip install -r requirements.txt
     * Dans VS code choisir le bon interpreteur
 
   * read the docs
