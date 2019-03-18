@@ -33,10 +33,6 @@
         :target: https://bettercodehub.com/results/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
         :alt: Maintainability
 
-
-* Free software: {{ cookiecutter.open_source_license }}
-* Documentation: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
-
 Post-creation
 -------------
 
@@ -63,8 +59,18 @@ Post-creation
     * mettre les bons badges
   * mettre dans github les tags de projets
 
+Documentation
+-------------
+
+The full documentation can be read at https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
+
 Features
 --------
 
 * TODO
+
+License
+-------
+
+BSD 3-Clause license, feel free to contribute: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io/en/latest/contributing.html.
 
