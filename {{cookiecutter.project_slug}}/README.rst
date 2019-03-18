@@ -41,6 +41,7 @@ Post-creation
     * python3 -m venv venv
     * source ven/bin/activate
     * *C'est important pour la suite*
+    * Dans VS code choisir le bon interpreteur
 
   * read the docs
 
@@ -70,7 +71,7 @@ Post-creation
   * readme.rst
 
     * mettre les bons badges
-    
+
   * mettre dans github les tags de projets
 
 Documentation
