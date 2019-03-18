@@ -1,9 +1,8 @@
-{% set is_open_source = cookiecutter.open_source_license != 'Not open source' -%}
 {% for _ in cookiecutter.project_name %}={% endfor %}
 {{ cookiecutter.project_name }}
 {% for _ in cookiecutter.project_name %}={% endfor %}
 
-{% if is_open_source %}
+
 .. image:: https://img.shields.io/pypi/v/{{ cookiecutter.project_slug }}.svg
         :target: https://pypi.python.org/pypi/{{ cookiecutter.project_slug }}
 
@@ -13,31 +12,42 @@
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.project_slug | replace("_", "-") }}/badge/?version=latest
         :target: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
-{%- endif %}
-
-{% if cookiecutter.add_pyup_badge == 'y' %}
-.. image:: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/shield.svg
-     :target: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/
-     :alt: Updates
-{% endif %}
 
 
 {{ cookiecutter.project_short_description }}
 
-{% if is_open_source %}
 * Free software: {{ cookiecutter.open_source_license }}
 * Documentation: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
-{% endif %}
+
+Post-creation
+-------------
+
+  * créer un environnement virtuel et installer les packages
+    * python3 -m venv venv
+    * source ven/bin/activate
+    * *C'est important pour la suite*
+  * read the docs
+    * ça a buggé, j'ai créé le projet à la main, et ensuite tout a fonctionné
+  * PyPI
+    * attention au nommage de version
+    * faut juste faire un upload : make release
+  * code climate
+    * dans les settings du projet, configurer pour les commentaires de pull requests
+    * pour le test coverage, trouver l'ID à coller dans la config de travis
+  * travis
+    * configurer le mot de passe de déploiement sur PyPI : travis encrypt --add deploy.password
+    * regarder la config de simplelogging
+    * pour avoir le code pour le badge, il faut cliquer sur le badge dans le dashboard
+  * coveralls
+    * changer le repo_token dans .coveralls.yml
+    * changer la conf de tox pour utiliser coveralls (cf simplelogging ou python dev tools)
+  * pepy.tech
+  * dependabot
+  * readme.rst
+    * mettre les bons badges
+  * mettre dans github les tags de projets
 
 Features
 --------
 
 * TODO
-
-Credits
--------
-
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
