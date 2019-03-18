@@ -2,7 +2,7 @@
 Cookiecutter PyPackage
 ======================
 
-Cookiecutter_ template for a Python package.
+Cookiecutter template for a Python package.
 
 * Based on GitHub repo: https://github.com/audreyr/cookiecutter-pypackage/
 * Fits my needs
