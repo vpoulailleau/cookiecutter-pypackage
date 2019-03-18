@@ -39,7 +39,7 @@ Post-creation
   * créer un environnement virtuel et installer les packages
 
     * python3 -m venv venv
-    * source ven/bin/activate
+    * source venv/bin/activate
     * *C'est important pour la suite*
     * Dans VS code choisir le bon interpreteur
 
