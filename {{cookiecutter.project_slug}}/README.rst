@@ -63,6 +63,7 @@ Post-creation
     * https://codeclimate.com/dashboard
     * pour le test coverage, trouver l'ID à coller dans la config de travis .travis.yml
     * dans les settings du projet, configurer pour les commentaires de pull requests
+    * badge à changer cf https://codeclimate.com/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/badges#maintainability-restructured
 
   * travis
 
