@@ -48,6 +48,11 @@ Post-creation
 
     * ça a buggé, j'ai créé le projet à la main, et ensuite tout a fonctionné
 
+      * import manuel
+      * Nom : {{ cookiecutter.project_slug }}
+      * URL du dépot : https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
+      * compiler une version : latest
+
   * PyPI
 
     * attention au nommage de version
