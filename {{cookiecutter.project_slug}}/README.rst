@@ -60,8 +60,9 @@ Post-creation
 
   * code climate
 
+    * https://codeclimate.com/dashboard
+    * pour le test coverage, trouver l'ID à coller dans la config de travis .travis.yml
     * dans les settings du projet, configurer pour les commentaires de pull requests
-    * pour le test coverage, trouver l'ID à coller dans la config de travis
 
   * travis
 
