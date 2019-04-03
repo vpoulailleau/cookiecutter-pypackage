@@ -17,6 +17,7 @@ fi
 echo ""
 
 echo "Running test"
+pip uninstall {{cookiecutter.project_slug}}
 python setup.py develop
 make test
 echo -n "Is it OK? (y/n) [y]: "
