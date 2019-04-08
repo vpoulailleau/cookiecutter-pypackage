@@ -33,6 +33,10 @@
         :target: https://bettercodehub.com/results/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
         :alt: Maintainability
 
+.. image:: https://img.shields.io/lgtm/grade/python/g/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}?logo=lgtm&logoWidth=1
+        :target: https://lgtm.com/projects/g/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/context:python
+        :alt: Maintainability
+
 Post-creation
 -------------
 
@@ -76,6 +80,7 @@ Post-creation
 
   * pepy.tech
   * dependabot
+  * lgtm
   * better code hub
   * readme.rst
 
